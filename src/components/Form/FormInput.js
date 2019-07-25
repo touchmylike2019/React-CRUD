@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { FormGroup, Label, Input } from 'reactstrap'
-class FormInput extends Component{
+
+class AddFormInput extends Component{
     state = {}
     handleChange = e => {
-        const {name, value} = e.target
+        const { name, value } = e.target
         this.setState({
             [name]: value
         }, () => {
@@ -17,15 +18,15 @@ class FormInput extends Component{
                 <Label>{ label }</Label>
                 <Input 
                     required
-                    type="text" 
-                    name={ name } 
+                    type='text'
+                    name={name} 
                     value={value}
-                    placeholder={ label } 
-                    onChange={ this.handleChange }
+                    placeholder={label} 
+                    onChange={this.handleChange}
                 />
             </FormGroup>
         )
     }
 }
 
-export default FormInput
+export default AddFormInput

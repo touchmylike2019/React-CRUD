@@ -7,14 +7,18 @@ const TableBody = props => {
                 <td>{data.firstName}</td>
                 <td>{data.lastName}</td>
                 <td>{data.age}</td>
-                <td><Button 
-                        color="Delete" 
-                        onClick={() => props.remove(index)}>danger
+                <td><Button  
+                        className='bg-warning border-0 mr-3'
+                        onClick={() => props.edit(true, data, index)}>Edit
+                    </Button>
+                    <Button 
+                        className='bg-danger border-0'
+                        onClick={() => props.remove(index)}>Delete
                     </Button>
                 </td>
             </tr>
     ))
-    return (<tbody>{member}</tbody>)
+    return (<tbody>{ member }</tbody>)
 }
 
 export default TableBody

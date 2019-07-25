@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Form, Button } from 'reactstrap'
-import FormInput from './FormInput'
+import FormInput from '../FormInput'
 
-class FormMain extends Component{
+class AddFormMain extends Component{
     initialState = {
         firstName: '',
         lastName: '',
@@ -22,9 +22,9 @@ class FormMain extends Component{
         this.setState(this.initialState)
     }
     render(){   
-        const {firstName, lastName, age} = this.state
+        const { firstName, lastName, age } = this.state
         return(
-            <Form onSubmit={ this.onSubmitForm }>
+            <Form onSubmit={this.onSubmitForm}>
                 <h2>Add Member</h2>
                 <FormInput 
                     label='First Name' 
@@ -44,10 +44,10 @@ class FormMain extends Component{
                     value={age}
                     onFormChange={this.onFormChange}
                 />
-                <Button type='submit' className='bg-primary'>Submit</Button>
+                <Button className='bg-primary border-0'>Submit</Button>
             </Form>
         )
     }
 }
 
-export default FormMain
+export default AddFormMain

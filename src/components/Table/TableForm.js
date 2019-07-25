@@ -5,13 +5,14 @@ import TableBody from './TableBody'
 
 class TableForm extends Component{
     render(){   
-        const { members, remove } = this.props
+        const { members, remove, edit } = this.props
         return(
             <Table hover className='mt-4'>
                 <TableHead />
                 <TableBody
                     remove={remove} 
                     members={members}
+                    edit={edit}
                 />
             </Table>
         )
