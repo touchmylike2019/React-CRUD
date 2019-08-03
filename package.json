@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "react-crud",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +9,7 @@
     "react-scripts": "3.0.1",
     "reactstrap": "^8.0.1"
   },
-  "homepage":"https://touchmylike2019.github.io/React-CRD",
+  "homepage":"https://touchmylike2019.github.io/React_CRUD",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

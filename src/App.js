@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Container } from 'reactstrap'
 import Header from './components/Header/Header'
 import Table from './components/Table/TableForm'
-import AddForm from './components/Form/addForm/addFormMain'
-import EditForm from './components/Form/editForm/editFormMain'
+import AddForm from './components/Form/AddForm'
+import EditForm from './components/Form/EditForm'
 
 class App extends Component{
 	state = {
@@ -38,6 +38,7 @@ class App extends Component{
 		}))
 	}
 	render(){
+		console.log(this.state)
 		return(
 			<Container >
 				<Header />
