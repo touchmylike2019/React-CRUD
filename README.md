@@ -1,5 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).npm
-
-## `npm install`
-## `npm start`
-
+# <u>Project Detail</u>
+<img src="./assets/index.png" />
+## Core dependencies
+    reactstrap
+    gh-pages
